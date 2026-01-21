@@ -43,13 +43,14 @@ pip install fastai torch torchvision coremltools ipywidgets
 
 ## 🏃‍♂️ How to Run
 
-**Prepare Data:**
-Ensure your `tennis_courts` folder has the three subfolders: `clay`, `grass`, `hard` containing your training images.
-**Open the Notebook:**
-Launch `Tennis_courts_image_classification.ipynb` in VS Code.
-**Step 1: Download "Unknown" Data:**
-Run **Block A**. This automatically downloads the *Imagenette* dataset and populates the `unknown` folder with random images. This prevents the "Closed World" problem where the AI forces every image to be a tennis court.
-**Step 2: Train the Model:**
+* **Prepare Data:**
+ Ensure your `tennis_courts` folder has the three subfolders: `clay`, `grass`, `hard` containing your training images.
+* **Open the Notebook:**
+ Launch `Tennis_courts_image_classification.ipynb` in VS Code.
+* **Step 1: Download "Unknown" Data:**
+ Run **Block A**.
+This automatically downloads the *Imagenette* dataset and populates the `unknown` folder with random images. This prevents the "Closed World" problem where the AI forces every image to be a tennis court.
+* **Step 2: Train the Model:**
 Run **Block B**. This loads the 4 classes and fine-tunes the ResNet18 model.
 * *Note:* The script forces execution on the CPU (`defaults.device = 'cpu'`) to ensure stability on macOS.
 
