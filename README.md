@@ -44,21 +44,22 @@ pip install fastai torch torchvision coremltools ipywidgets
 ## 🏃‍♂️ How to Run
 
 * **Prepare Data:**
- Ensure your `tennis_courts` folder has the three subfolders: `clay`, `grass`, `hard` containing your training images.
+<br> Ensure your `tennis_courts` folder has the three subfolders: `clay`, `grass`, `hard` containing your training images.
 * **Open the Notebook:**
- Launch `Tennis_courts_image_classification.ipynb` in VS Code.
+<br> Launch `Tennis_courts_image_classification.ipynb` in VS Code.
 * **Step 1: Download "Unknown" Data:**
- Run **Block A**.
-This automatically downloads the *Imagenette* dataset and populates the `unknown` folder with random images. This prevents the "Closed World" problem where the AI forces every image to be a tennis court.
+<br> Run **Block A**.
+<br>This automatically downloads the *Imagenette* dataset and populates the `unknown` folder with random images. This prevents the "Closed World" problem where the AI forces every image to be a tennis court.
 * **Step 2: Train the Model:**
-Run **Block B**. This loads the 4 classes and fine-tunes the ResNet18 model.
-* *Note:* The script forces execution on the CPU (`defaults.device = 'cpu'`) to ensure stability on macOS.
+<br>Run **Block B**. This loads the 4 classes and fine-tunes the ResNet18 model.
+<br> *Note:*
+<br>The script forces execution on the CPU (`defaults.device = 'cpu'`) to ensure stability on macOS.
 
 
-**Step 3: Test:**
-Run the testing blocks to verify accuracy on the `test_images_set` folder.
-**Step 4: Export:**
-Run the final block to generate `TennisClassifier.mlpackage`.
+* **Step 3: Test:**
+<br> Run the testing blocks to verify accuracy on the `test_images_set` folder.
+* **Step 4: Export:**
+<br> Run the final block to generate `TennisClassifier.mlpackage`.
 
 ## 📱 CoreML Model Specs
 
@@ -75,5 +76,3 @@ If you encounter `RuntimeError: Found two devices, mps:0 and cpu!`:
 
 * This project is configured to bypass the Mac GPU (MPS) bug by forcing the model to the CPU.
 * Ensure the top cell contains: `defaults.device = torch.device('cpu')`.
-
-```
