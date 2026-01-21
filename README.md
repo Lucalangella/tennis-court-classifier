@@ -1,5 +1,3 @@
-Here is a professional `README.md` for your project. You can copy this code and save it as a file named `README.md` in your project folder.
-
 ```markdown
 # 🎾 Tennis Court Surface Classifier
 
