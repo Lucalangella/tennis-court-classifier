@@ -76,3 +76,76 @@ If you encounter `RuntimeError: Found two devices, mps:0 and cpu!`:
 
 * This project is configured to bypass the Mac GPU (MPS) bug by forcing the model to the CPU.
 * Ensure the top cell contains: `defaults.device = torch.device('cpu')`.
+
+
+# 🎾 AI Tennis Court Classifier
+
+**Classify tennis court surfaces (Clay, Grass, Hard) using Deep Learning.**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Lucalangella/tennis-court-classifier/blob/main/notebooks/train_model_colab.ipynb)
+
+This project compares two approaches to training a Computer Vision model using **FastAI** and **PyTorch**:
+1.  **Local Training:** Running on a Mac (M1/M2) with VS Code.
+2.  **Cloud Training:** Running on Google Colab with NVIDIA GPUs.
+
+*Read the full story on Medium: [Link to your future article]*
+
+---
+
+## 📂 Repository Structure
+
+* `notebooks/`
+    * `train_model_colab.ipynb` → The cloud-optimized version (handling "Dependency Hell" & Linux file sorting).
+    * `train_model_local.ipynb` → The local version (optimized for Mac/VS Code).
+* `tennis_courts/` → The dataset (organized by class).
+* `test_images_set/` → Unseen images used for the final exam.
+
+---
+
+## 🚀 How to Run the Code
+
+### Option 1: The Easy Way (Google Colab)
+No installation required. Runs entirely in your browser using free GPUs.
+
+1.  Click the **"Open in Colab"** badge above.
+2.  Run **Block 1** to set up the environment (this handles the NumPy/FastAI version fixes automatically).
+3.  Run the training blocks to see the model in action.
+
+### Option 2: The Local Way (VS Code)
+If you want to run this on your own machine:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Lucalangella/tennis-court-classifier.git](https://github.com/Lucalangella/tennis-court-classifier.git)
+    cd tennis-court-classifier
+    ```
+
+2.  **Install Dependencies:**
+    Make sure you have Python installed, then run:
+    ```bash
+    pip install fastai torch torchvision
+    ```
+
+3.  **Run the Notebook:**
+    Open `notebooks/train_model_local.ipynb` in VS Code and select your Python kernel.
+
+---
+
+## 📊 The "0% vs 20% Error" Mystery
+
+You might notice different results depending on where you train:
+
+| Environment | Typical Error Rate | Why? |
+| :--- | :--- | :--- |
+| **VS Code (Mac)** | **~0% (Suspiciously Perfect)** | Mac file sorting + small Batch Size (16) allowed the model to "memorize" the easy validation set. |
+| **Google Colab** | **~20% (More Realistic)** | Linux file sorting + larger Batch Size (32) forced the model to confront "tricky" images (e.g., green forests looking like grass courts). |
+
+**Conclusion:** The Colab model is actually "smarter" because it learned not to trust every green pixel it sees!
+
+---
+
+## 🛠 Tech Stack
+* **FastAI** (Deep Learning Library)
+* **PyTorch** (Underlying Framework)
+* **CoreML** (Export format for iOS)
+* **ResNet18** (Pre-trained Architecture)
