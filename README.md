@@ -15,14 +15,16 @@ A Deep Learning model built with **FastAI** and **PyTorch** to automatically det
 
 ```text
 .
+├── notebooks/                  # Contains the training code
+│   ├── train_model_colab.ipynb # Cloud version
+│   └── train_model_local.ipynb # Local VS Code version
 ├── tennis_courts/              # Main dataset folder
-│   ├── clay/                   # Training images for Clay
-│   ├── grass/                  # Training images for Grass
-│   ├── hard/                   # Training images for Hard
-│   └── unknown/                # Auto-generated "junk" images
+│   ├── clay/
+│   ├── grass/
+│   ├── hard/
+│   └── unknown/
 ├── test_images_set/            # Separate images for final testing
-├── TennisClassifier.mlpackage/ # The compiled CoreML model (Output)
-├── Tennis_courts_image_classification.ipynb # Main Jupyter Notebook
+├── requirements.txt            # Python dependencies
 └── README.md
 
 ```
