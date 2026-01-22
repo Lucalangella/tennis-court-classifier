@@ -67,17 +67,27 @@ python scripts/train_model_local.py
 
 ## 📊 Results
 
-The model was fine-tuned for 4 epochs, achieving an accuracy of approximately **95%**.
+The model was fine-tuned for **1 epoch** locally using VS Code, achieving an outstanding accuracy of approximately **97%**.
 
-| Class | Precision |
-| --- | --- |
-| **Clay** | High |
-| **Grass** | High |
-| **Hard** | High |
-| **Unknown** | High |
-
-*A confusion matrix and top-loss visualization are generated at the end of the training script to help analyze performance.*
-
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>📈 Training Stats</h3>
+      <ul>
+        <li><b>Platform:</b> VS Code (Local)</li>
+        <li><b>Epochs:</b> 1</li>
+        <li><b>Final Error Rate:</b> ~3.2%</li>
+      </ul>
+      <p><i>Training Log Snapshot:</i></p>
+      <img src="https://github.com/user-attachments/assets/bb7a7d4a-a289-459e-ac43-3342573ada2c" alt="Training Logs" width="100%">
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔍 Error Analysis</h3>
+      <p>The <b>Confusion Matrix</b> helps visualize false positives (e.g., where the model confused <i>Grass</i> for <i>Hard</i> courts).</p>
+      <img src="https://github.com/user-attachments/assets/36692867-619d-408e-9a34-ea907ac6b6cd" alt="Confusion Matrix" width="100%">
+    </td>
+  </tr>
+</table>
 ## 📱 iOS Deployment (CoreML)
 
 The training pipeline concludes by converting the PyTorch model to CoreML format. You can download the trained model directly from this repository:
