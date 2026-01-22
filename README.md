@@ -92,10 +92,10 @@ The model was fine-tuned for **1 epoch** locally using VS Code, achieving an out
 
 The training pipeline concludes by converting the PyTorch model to CoreML format. You can download the trained model directly from this repository:
 
-📥 **[Download TennisClassifier.zip](./models/TennisClassifier_Final.zip)**
+📥 **[Download TennisClassifier.mlpackage]([./models/TennisClassifier_Final.zip](https://drive.google.com/drive/u/0/folders/1Y4OWkc9lIo2FzQM4Ku9Sb-z8igd8-x7s))**
 
 **How to use:**
-1.  Download and unzip the file above.
+1.  Download the file above.
 2.  Drag `TennisClassifier.mlpackage` into your Xcode project.
 3.  The model is ready to use with the Vision framework!
 ## 🤝 Contributing
