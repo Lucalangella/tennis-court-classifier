@@ -92,7 +92,8 @@ The model was fine-tuned for **1 epoch** locally using VS Code, achieving an out
 
 The training pipeline concludes by converting the PyTorch model to CoreML format. You can download the trained model directly from this repository:
 
-📥 **[Download TennisClassifier.mlpackage]([./models/TennisClassifier_Final.zip](https://drive.google.com/drive/u/0/folders/1Y4OWkc9lIo2FzQM4Ku9Sb-z8igd8-x7s))**
+[tennisclassifier.mlpackage]([https://example.com](https://drive.google.com/drive/u/0/folders/1Y4OWkc9lIo2FzQM4Ku9Sb-z8igd8-x7s))
+
 
 **How to use:**
 1.  Download the file above.
