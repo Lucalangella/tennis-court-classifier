@@ -91,19 +91,3 @@ The training pipeline concludes by converting the PyTorch model to CoreML format
 ## 🤝 Contributing
 
 Feel free to fork this project, open issues, or submit PRs if you find better ways to handle the data or improve the model architecture!
-
-## 📜 License
-
-This project is open-source. Please attribute the credit if used in your own projects.
-
-```
-
-***
-
-### A Quick Tip for the "Medium" Badge
-In the code above, look for the line:
-`[![Read on Medium]...(YOUR_MEDIUM_ARTICLE_LINK_HERE)`
-
-Once you publish your article, remember to come back to your GitHub repo and replace `YOUR_MEDIUM_ARTICLE_LINK_HERE` with the actual URL so people can read the full story!
-
-```
