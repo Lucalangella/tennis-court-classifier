@@ -88,6 +88,7 @@ The model was fine-tuned for **1 epoch** locally using VS Code, achieving an out
     </td>
   </tr>
 </table>
+
 ## 📱 iOS Deployment (CoreML)
 
 The training pipeline concludes by converting the PyTorch model to CoreML format. You can download the trained models (Colab and VS) directly from this repository:
