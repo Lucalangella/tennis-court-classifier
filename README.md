@@ -1,4 +1,3 @@
-```markdown
 # 🎾 Tennis Court Classifier (FastAI + CoreML)
 
 A Deep Learning project that classifies tennis court surfaces (**Clay, Grass, Hard**) using Computer Vision. 
@@ -6,7 +5,7 @@ A Deep Learning project that classifies tennis court surfaces (**Clay, Grass, Ha
 This project demonstrates a complete pipeline: from data scraping and model training with **FastAI/PyTorch** to exporting a **CoreML** model ready for iOS deployment. It is designed to run seamlessly on both **Google Colab** (NVIDIA GPUs) and local **Mac Apple Silicon** (M1/M2/M3) machines.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LucaLangella/tennis-court-classifier/blob/main/notebooks/train_model_colab.ipynb)
-[![Read on Medium](https://img.shields.io/badge/Medium-Story-black?logo=medium)](YOUR_MEDIUM_ARTICLE_LINK_HERE)
+[![Read on Medium](https://img.shields.io/badge/Medium-Story-black?logo=medium)](https://medium.com/@langellaluca00/building-a-tennis-court-classifier-with-deep-learning-2e592cecb343?postPublishedType=initial)
 
 ## 🚀 Features
 
