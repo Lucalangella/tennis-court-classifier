@@ -80,13 +80,14 @@ The model was fine-tuned for 4 epochs, achieving an accuracy of approximately **
 
 ## 📱 iOS Deployment (CoreML)
 
-The training pipeline concludes by converting the PyTorch model to CoreML format.
+The training pipeline concludes by converting the PyTorch model to CoreML format. You can download the trained model directly from this repository:
 
-1. The script generates `TennisClassifier_Colab.mlpackage`.
-2. Download this file.
-3. Drag and drop it into your Xcode project.
-4. The model is ready to use with the Vision framework!
+📥 **[Download TennisClassifier.zip](./models/TennisClassifier_Final.zip)**
 
+**How to use:**
+1.  Download and unzip the file above.
+2.  Drag `TennisClassifier.mlpackage` into your Xcode project.
+3.  The model is ready to use with the Vision framework!
 ## 🤝 Contributing
 
 Feel free to fork this project, open issues, or submit PRs if you find better ways to handle the data or improve the model architecture!
