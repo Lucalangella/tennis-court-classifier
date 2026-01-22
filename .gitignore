@@ -9,3 +9,13 @@ __pycache__/
 # (Optional) Ignore the virtual environment if you have one
 .venv/
 venv/
+
+# --- AI & Build Artifacts ---
+# Ignore the compiled CoreML model (Large Binary)
+*.mlpackage
+
+# Ignore zipped archives
+*.zip
+
+# Ignore the 'models' folder if FastAI creates one
+models/
